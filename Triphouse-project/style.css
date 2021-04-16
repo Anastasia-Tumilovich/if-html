@@ -9,6 +9,102 @@ body {
     margin: 0 auto;
 }
 
+header {
+    height: 100vh;
+    background-image: url(./images/header-background.png);
+    background-size: cover;
+}
+
+.header__wrapper {
+    padding: 51px 104px 120px;
+} 
+
+.header__bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__block {
+    display: flex;
+    align-items: center;
+}
+
+.header__navigation ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__navigation li {
+    margin-left: 24px;
+}
+
+.header__navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: 12px;
+}
+
+.active__link a {
+    border-bottom: 3px solid #F5BD41;
+}
+
+.header__navigation li:hover a {
+    border-bottom: 3px solid #F5BD41;
+}
+
+.user__settings {
+    margin-left: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.night {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.night:hover {
+    color: #F5BD41;
+    cursor: pointer;
+}
+
+.login {
+    margin-left: 22px;
+    color: #ffffff;
+    font-size: 40px;
+}
+
+.login:hover {
+    color: #F5BD41;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.menu:hover {
+    color: #F5BD41;
+    cursor: pointer;
+}
+
+.header__title {
+    font-family: "Roboto Medium";
+    font-size: 50px;
+    color: #ffffff;
+    margin-top: 180px;
+    margin-bottom: 100px;
+}
+
+.market__links {
+    width: 265px;
+    display: flex;
+    justify-content: space-between;
+    margin: 120px auto 0px;
+}
+
 .offer__wrapper {
     padding: 120px 104px;
 }
@@ -101,6 +197,37 @@ footer {
 }
 
 @media (max-width: 360px) {
+    .header__wrapper {
+        padding: 12px 16px 40px;
+    }
+
+    .header__bar>img {
+        width: 121px;
+        height: 24px;
+    }
+
+    .header__navigation li {
+        display: none;
+    }
+
+    .night {
+        font-size: 16px;
+    }
+
+    .login {
+        font-size: 24px;
+        margin: 0 16px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .header__title {
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
     .offer__wrapper {
         padding: 24px 73px 40px;
     }
