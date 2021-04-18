@@ -36,6 +36,55 @@
             </div>
             <h1 class="header__title">Discover stays <br/>
                 to live, work or just relax</h1>
+            <form class="main__form" action="/">
+                <div class="form__content">
+                    <div class="labels">
+                        <label for="destination">Your destination or hotel name</label>
+                        <label for="date">Check-in-Check-out</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="destination" id="destination" placeholder="New York">
+                        <input type="text" name="date" id="date" placeholder="Tue 15 Sept &ndash; Sat 19 Sept" onfocus="(this.type='date')" onblur="(this.type='text')">
+                        <input class="persons" placeholder="2 Adults &ndash; 0 Children &ndash; 1 Room">
+                        <button>Search</button>
+                    </div>
+                </div>
+            </form>
+            <form class="mobile__form" action="/">
+                <div class="form__content">
+                    <div class="hotel-name">
+                        <label for="destination-mobile">
+                            <img src="./images/book-icon.png" alt="" width="16" height="16">
+                        </label>
+                        <input type="text" name="destination-mobile" id="destination-mobile" placeholder="Your destination or hotel name">
+                    </div>
+                    <div class="input__dates">
+                        <div class="input__date">
+                            <label for="check-in">Check-in date</label>
+                            <input type="text" name="check-in" id="check-in" placeholder="Tue 15 Sept 2020" onfocus="(this.type='date')" onblur="(this.type='text')">
+                        </div>
+                        <div class="input__date">
+                            <label for="check-out">Check-out date</label>
+                            <input type="text" name="check-out" id="check-out" placeholder="Sat 19 Sept 2020" onfocus="(this.type='date')" onblur="(this.type='text')">
+                        </div>
+                    </div>
+                    <div class="input__persons">
+                        <div class="input__person">
+                            <label for="adults">Adults</label>
+                            <input type="text" name="adults" id="adults" placeholder="2">
+                        </div>
+                        <div class="input__person">
+                            <label for="children">Children</label>
+                            <input type="text" name="children" id="children" placeholder="0">
+                        </div>
+                        <div class="input__person">
+                            <label for="room">Rooms</label>
+                            <input type="text" name="room" id="room" placeholder="1">
+                        </div>
+                    </div>
+                    <button>Search</button>
+                </div>
+            </form>
             <div class="market__links">
                 <img src="./images/google-play.svg" alt="google-play"/>
                 <img src="./images/app-store.svg" alt="app-store"/>
