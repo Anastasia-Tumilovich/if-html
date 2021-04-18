@@ -59,34 +59,39 @@ header {
 }
 
 .night {
-    color: #ffffff;
-    font-size: 30px;
+    background: url(./images/svg_sprite.svg);
+    background-position: -72px 0;
+    width: 30px;
+    height: 30px;
 }
 
 .night:hover {
-    color: #F5BD41;
+    background-position: -230px 0;
     cursor: pointer;
 }
 
 .login {
     margin-left: 22px;
-    color: #ffffff;
-    font-size: 40px;
+    background: url(./images/svg_sprite.svg);
+    background-position: -106px 0;
+    width: 40px;
+    height: 40px;
 }
 
 .login:hover {
-    color: #F5BD41;
+    background-position: -268px -3px;
     cursor: pointer;
 }
 
 .menu {
+    background: url(./images/svg_sprite.svg);
+    background-position: -40px -4px;
+    width: 24px;
+    height: 16px;
     display: none;
-    color: #ffffff;
-    font-size: 24px;
 }
 
 .menu:hover {
-    color: #F5BD41;
     cursor: pointer;
 }
 
@@ -200,12 +205,35 @@ header {
     margin-top: 48px;
 }
 
-.item__icon {
+.support__icon {
+    background: url(./images/svg_sprite.svg);
+    background-position: -6px -112px;
+    width: 76px;
+    height: 92px;
+    margin: 0 auto;
+}
+
+.communicate__icon {
+    background: url(./images/svg_sprite.svg);
+    background-position: -90px -112px;
+    width: 84px;
+    height: 92px;
+    margin: 0 auto;
+}
+
+.book__icon {
+    background: url(./images/svg_sprite.svg);
+    background-position: -185px -112px;
     width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 92px;
+    margin: 0 auto;
+}
+
+.review__icon {
+    background: url(./images/svg_sprite.svg);
+    background-position: -311px -113px;
+    width: 92px;
+    height: 92px;
     margin: 0 auto;
 }
 
@@ -275,12 +303,26 @@ footer {
     }
 
     .night {
-        font-size: 16px;
+        background: url(./images/svg_sprite.svg);
+        background-position: -24px -4px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .night:hover {
+        background-position: -208px -7px;
     }
 
     .login {
-        font-size: 24px;
+        background: url(./images/svg_sprite.svg);
+        background-position: 0 0;
+        width: 24px;
+        height: 24px;
         margin: 0 16px;
+    }
+
+    .login:hover {
+        background-position: -178px -3px;
     }
 
     .mobile__form {
@@ -345,6 +387,13 @@ footer {
 
     .hotel-name input {
         flex-grow: 1;
+    }
+
+    .search-icon {
+        background: url(./images/svg_sprite.svg);
+        background-position: -154px 0;
+        width: 16px;
+        height: 16px;
     }
 
     .input__dates {
@@ -433,14 +482,32 @@ footer {
         flex-flow: column;
     }
 
-    .item__icon {
-        width: 70px;
-        height: 70px;
+    .support__icon {
+        background: url(./images/svg_sprite.svg);
+        background-position: 0 -35px;
+        width: 54px;
+        height: 66px;
     }
 
-    .item__icon img {
-        width: 100%;
-        height: 100%;
+    .communicate__icon {
+        background: url(./images/svg_sprite.svg);
+        background-position: -60px -38px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .book__icon {
+        background: url(./images/svg_sprite.svg);
+        background-position: -126px -44px;
+        width: 70px;
+        height: 48px;
+    }
+
+    .review__icon {
+        background: url(./images/svg_sprite.svg);
+        background-position: -202px -30px;
+        width: 66px;
+        height: 60px;
     }
 
     .item p {
