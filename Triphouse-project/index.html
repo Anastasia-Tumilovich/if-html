@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"/>
     <link rel="stylesheet" href="./fonts.css"/>
     <link rel="stylesheet" href="./style.css"/>
-    
 </head>
 <body>
     <header>
@@ -28,14 +25,61 @@
                         </ul>
                     </nav>
                     <div class="user__settings">
-                        <span class="material-icons night">brightness_4</span>
-                        <span class="material-icons login">account_circle</span>
-                        <span class="material-icons menu">menu</span>
+                        <div class="night"></div>
+                        <div class="login"></div>
+                        <div class="menu"></div>
                     </div>
                 </div>
             </div>
             <h1 class="header__title">Discover stays <br/>
                 to live, work or just relax</h1>
+            <form class="main__form" action="/">
+                <div class="form__content">
+                    <div class="labels">
+                        <label for="destination">Your destination or hotel name</label>
+                        <label for="date">Check-in-Check-out</label>
+                    </div>
+                    <div class="inputs">
+                        <input type="text" name="destination" id="destination" placeholder="New York"/>
+                        <input type="text" name="date" id="date" placeholder="Tue 15 Sept &ndash; Sat 19 Sept" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                        <input class="persons" placeholder="2 Adults &ndash; 0 Children &ndash; 1 Room"/>
+                        <button>Search</button>
+                    </div>
+                </div>
+            </form>
+            <form class="mobile__form" action="/">
+                <div class="form__content">
+                    <div class="hotel-name">
+                        <label class="search-icon" for="destination-mobile"></label>
+                        <input type="text" name="destination-mobile" id="destination-mobile" placeholder="Your destination or hotel name"/>
+                    </div>
+                    <div class="input__dates">
+                        <div class="input__date">
+                            <label for="check-in">Check-in date</label>
+                            <input type="text" name="check-in" id="check-in" placeholder="Tue 15 Sept 2020" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                        </div>
+                        <div class="input__date">
+                            <label for="check-out">Check-out date</label>
+                            <input type="text" name="check-out" id="check-out" placeholder="Sat 19 Sept 2020" onfocus="(this.type='date')" onblur="(this.type='text')"/>
+                        </div>
+                    </div>
+                    <div class="input__persons">
+                        <div class="input__person">
+                            <label for="adults">Adults</label>
+                            <input type="text" name="adults" id="adults" placeholder="2"/>
+                        </div>
+                        <div class="input__person">
+                            <label for="children">Children</label>
+                            <input type="text" name="children" id="children" placeholder="0"/>
+                        </div>
+                        <div class="input__person">
+                            <label for="room">Rooms</label>
+                            <input type="text" name="room" id="room" placeholder="1"/>
+                        </div>
+                    </div>
+                    <button>Search</button>
+                </div>
+            </form>
             <div class="market__links">
                 <img src="./images/google-play.svg" alt="google-play"/>
                 <img src="./images/app-store.svg" alt="app-store"/>
@@ -49,27 +93,19 @@
                 <div class="line"></div>
                 <ul class="items">
                     <li class="item">
-                        <div class="item__icon">
-                            <img src="./images/support-icon.png" alt="support"/>
-                        </div>
+                        <div class="support__icon"></div>
                         <p>Support 24/7</p>
                     </li>    
                     <li class="item">
-                        <div class="item__icon">
-                            <img src="./images/communicate-icon.png" alt="communicate"/>
-                        </div>
+                        <div class="communicate__icon"></div>
                         <p>Communicate directly</p>
                     </li>    
                     <li class="item">
-                        <div class="item__icon">
-                            <img src="./images/book-icon.png" alt="book"/>
-                        </div>
+                        <div class="book__icon"></div>
                         <p>Book online</p>
                     </li>
                     <li class="item">
-                        <div class="item__icon">
-                            <img src="./images/review-icon.png" alt="review"/>
-                        </div>
+                        <div class="review__icon"></div>
                         <p>Real quest review</p>
                     </li>    
                 </ul>
@@ -137,7 +173,7 @@
                         </li>
                     </ul>
                 </nav>
-                <p>&copy; 2020 Triphouse,lnc.All rights reserved</p>
+                <p>&copy; 2020 Triphouse, lnc. All rights reserved</p>
             </div>
         </div>
     </footer>

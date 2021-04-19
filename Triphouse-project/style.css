@@ -59,34 +59,39 @@ header {
 }
 
 .night {
-    color: #ffffff;
-    font-size: 30px;
+    background: url(./images/svg_sprite.svg);
+    background-position: -72px 0;
+    width: 30px;
+    height: 30px;
 }
 
 .night:hover {
-    color: #F5BD41;
+    background-position: -230px 0;
     cursor: pointer;
 }
 
 .login {
     margin-left: 22px;
-    color: #ffffff;
-    font-size: 40px;
+    background: url(./images/svg_sprite.svg);
+    background-position: -106px 0;
+    width: 40px;
+    height: 40px;
 }
 
 .login:hover {
-    color: #F5BD41;
+    background-position: -268px -3px;
     cursor: pointer;
 }
 
 .menu {
+    background: url(./images/svg_sprite.svg);
+    background-position: -40px -4px;
+    width: 24px;
+    height: 16px;
     display: none;
-    color: #ffffff;
-    font-size: 24px;
 }
 
 .menu:hover {
-    color: #F5BD41;
     cursor: pointer;
 }
 
@@ -95,7 +100,71 @@ header {
     font-size: 50px;
     color: #ffffff;
     margin-top: 180px;
-    margin-bottom: 100px;
+}
+
+.main__form {
+    margin-top: 100px;
+}
+
+.mobile__form {
+    display: none;
+}
+
+.labels {
+    font-family: "Roboto Regular";
+    font-size: 18px;
+    color: #ffffff;
+    padding-left: 24px;
+}
+
+.labels label:first-child {
+    margin-right: 133px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+.inputs input {
+    padding: 22px 24px 21px; 
+    border: none;
+    border-radius: 8px;
+    outline-color: #F5BD41;
+    outline-offset: -2px;
+    font-family: "Roboto Regular";
+    font-size: 18px;
+}
+
+.inputs input:first-child {
+    flex-grow: 2;
+}
+
+.inputs input:last-of-type {
+    flex-grow: 1.5;
+}
+
+.inputs input:nth-child(2) {
+    flex-grow: 1;
+}
+
+::placeholder {
+    font-family: "Roboto Regular";
+    font-size: 18px;
+    color: #383838;
+}
+
+.inputs button {
+    padding: 20px 57px;
+    border: none;
+    border-radius: 8px;
+    background: #3077C6;
+    color: #ffffff;
+    font-family: "Roboto Medium";
+    font-size: 24px;
 }
 
 .market__links {
@@ -136,12 +205,35 @@ header {
     margin-top: 48px;
 }
 
-.item__icon {
+.support__icon {
+    background: url(./images/svg_sprite.svg);
+    background-position: -6px -112px;
+    width: 76px;
+    height: 92px;
+    margin: 0 auto;
+}
+
+.communicate__icon {
+    background: url(./images/svg_sprite.svg);
+    background-position: -90px -112px;
+    width: 84px;
+    height: 92px;
+    margin: 0 auto;
+}
+
+.book__icon {
+    background: url(./images/svg_sprite.svg);
+    background-position: -185px -112px;
     width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 92px;
+    margin: 0 auto;
+}
+
+.review__icon {
+    background: url(./images/svg_sprite.svg);
+    background-position: -311px -113px;
+    width: 92px;
+    height: 92px;
     margin: 0 auto;
 }
 
@@ -211,12 +303,34 @@ footer {
     }
 
     .night {
-        font-size: 16px;
+        background: url(./images/svg_sprite.svg);
+        background-position: -24px -4px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .night:hover {
+        background-position: -208px -7px;
     }
 
     .login {
-        font-size: 24px;
+        background: url(./images/svg_sprite.svg);
+        background-position: 0 0;
+        width: 24px;
+        height: 24px;
         margin: 0 16px;
+    }
+
+    .login:hover {
+        background-position: -178px -3px;
+    }
+
+    .mobile__form {
+        display: block;
+    }
+
+    .main__form {
+        display: none;
     }
 
     .menu {
@@ -226,6 +340,129 @@ footer {
     .header__title {
         font-size: 30px;
         margin-top: 40px;
+    }
+
+    .mobile__form {
+        margin-top: 31px;
+    }
+
+    .mobile__form .form__content {
+    padding: 8px;
+    background: #F5BD41;
+    }
+
+    .mobile__form input {
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        font-family: "Roboto Medium";
+        font-size: 15px;
+    }
+
+    .mobile__form button {
+        margin-top: 8px;
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        background: #3077C6;
+        color: #ffffff;
+        font-family: "Roboto Medium";
+        font-size: 19px;
+        padding: 14px 125px;
+        line-height: 20px;
+    }
+
+    .hotel-name {
+        display: flex;
+        background: #ffffff;
+        padding: 15px 12px;
+        align-items: center;
+        border-radius: 4px;
+        line-height: 17px;
+    }
+
+    .hotel-name label {
+        margin-right: 8px;
+    }
+
+    .hotel-name input {
+        flex-grow: 1;
+    }
+
+    .search-icon {
+        background: url(./images/svg_sprite.svg);
+        background-position: -154px 0;
+        width: 16px;
+        height: 16px;
+    }
+
+    .input__dates {
+        display: flex;
+        margin-top: 8px;
+    }
+
+    .input__date:first-child {
+        margin-right: 8px;
+    }
+
+    .input__date {
+        background: #ffffff;
+        border-radius: 4px;
+        padding: 6px 8px;
+    }
+
+    .input__date label {
+        font-family: "Roboto Regular";
+        font-size: 12px;
+    }
+
+    .input__persons {
+        display: flex;
+        margin-top: 8px;
+        background: #ffffff;
+        border-radius: 4px;
+    }
+
+    .input__person {
+        padding: 6px 8px 3px;
+        line-height: 19px;
+        position: relative;
+    }
+
+    .input__person:nth-child(2)::after {
+        content: "";
+        background: #BFBFBF;
+        width: 1px;
+        height: 32px;
+        position: absolute;
+        top: 8px;
+        right: 0;
+        
+    }
+
+    .input__person:first-child::after {
+        content: "";
+        background: #BFBFBF;
+        width: 1px;
+        height: 32px;
+        position: absolute;
+        top: 8px;
+        right: 0;
+    }
+
+    ::placeholder {
+        font-family: "Roboto Medium";
+        font-size: 15px;
+        color: #383838;
+    }
+
+    .input__person label {
+        font-family: "Roboto Regular";
+        font-size: 12px;
+    }
+
+    .market__links {
+        margin-top: 32px;
     }
 
     .offer__wrapper {
@@ -245,14 +482,32 @@ footer {
         flex-flow: column;
     }
 
-    .item__icon {
-        width: 70px;
-        height: 70px;
+    .support__icon {
+        background: url(./images/svg_sprite.svg);
+        background-position: 0 -35px;
+        width: 54px;
+        height: 66px;
     }
 
-    .item__icon img {
-        width: 100%;
-        height: 100%;
+    .communicate__icon {
+        background: url(./images/svg_sprite.svg);
+        background-position: -60px -38px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .book__icon {
+        background: url(./images/svg_sprite.svg);
+        background-position: -126px -44px;
+        width: 70px;
+        height: 48px;
+    }
+
+    .review__icon {
+        background: url(./images/svg_sprite.svg);
+        background-position: -202px -30px;
+        width: 66px;
+        height: 60px;
     }
 
     .item p {
