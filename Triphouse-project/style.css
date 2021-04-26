@@ -36,6 +36,26 @@ header {
 
 .header__navigation li {
     margin-left: 24px;
+    position: relative;
+}
+
+.header__navigation li:hover::after, .active__link::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #F5BD41;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+}
+
+.header__navigation li:not(.active__link)::after {
+    animation: line 1s linear;
+}
+
+@keyframes line {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .header__navigation a {
@@ -43,15 +63,6 @@ header {
     font-size: 24px;
     text-decoration: none;
     color: #ffffff;
-    padding-bottom: 12px;
-}
-
-.active__link a {
-    border-bottom: 3px solid #F5BD41;
-}
-
-.header__navigation li:hover a {
-    border-bottom: 3px solid #F5BD41;
 }
 
 .user__settings {
@@ -181,17 +192,24 @@ header {
     padding: 120px 104px;
 }
 
-.offer__title {
+.section__title {
     font-family: "Roboto Medium";
     font-size: 40px;
     text-align: center;
 }
 
-.line {
-    width: 100px;
+.offer__title {
+    position: relative;
+}
+
+.offer__title::after {
+    content: "";
+    position: absolute;
+    width: 10%;
     height: 4px;
-    margin: 20px auto 0;
-    background: #F5BD41;
+    background-color: #F5BD41;
+    bottom: -20px;
+    left: 45%;
 }
 
 .items {
@@ -238,6 +256,69 @@ header {
     width: 92px;
     height: 92px;
     margin: 0 auto;
+}
+
+.home {
+    background: #EAF0F9;
+}
+
+.home__wrapper {
+    padding: 120px 101px;
+}
+
+.gallery {
+    margin-top: 104px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.gallery::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-image: url(./images/svg_sprite.svg);
+    background-position: -308px -2px;
+    background-color: #f3f3f4;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 5px 5px grey;
+    top: 32%;
+    right: -2%;
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+.gallery:hover::after {
+    transform: scale(1.2);
+}
+
+.gallery__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.gallery__item img {
+    width: 100%;
+}
+
+.gallery__item h3 {
+    font-family: "Roboto Regular";
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+.gallery__item a {
+    text-decoration: none;
+    color: #3077c6;
+}
+
+.gallery__item p {
+    font-family: "Roboto Regular";
+    font-size: 24px;
+    letter-spacing: -1px;
+    color: #bfbfbf;
+    margin-top: 24px;
 }
 
 footer {
@@ -322,7 +403,6 @@ footer {
         font-size: 25px;
         padding-right: 0;  
         padding-left: 0;
-        /* color: #a3a3a3; */
     } 
 
     .inputs {
@@ -345,7 +425,6 @@ footer {
     ::placeholder {
         text-align: center;
         font-size: 25px;
-        /* color: #F5BD41; */
     }
 
     .offer__wrapper {
@@ -356,8 +435,12 @@ footer {
         font-size: 21px;
     }
     
-    .footer__wrapper {
+    .home__wrapper, .footer__wrapper {
         padding: 6vw;
+    }
+
+    .gallery__item h3, .gallery__item p {
+        font-size: 21px;
     }
 
     .footer-logo-white {
@@ -433,8 +516,12 @@ footer {
         width: 100%;
     }
 
-    .offer__title {
+    .section__title {
         font-size: 35px;
+    }
+
+    .offer__title::after {
+        content: none;
     }
 
     .items {
@@ -456,6 +543,10 @@ footer {
 
     ::placeholder {
         font-size: 15px;
+    }
+
+    .gallery__item:nth-child(n+3) {
+        display: none;
     }
 
     .navigation__item>a {
@@ -644,14 +735,6 @@ footer {
         padding: 24px 73px 40px;
     }
 
-    .offer__title {
-        font-size: 28px;
-    }
-
-    .line {
-        display: none;
-    }
-
     .items {
         align-items: center;
         flex-flow: column;
@@ -688,6 +771,37 @@ footer {
     .item p {
         margin: 16px 0 32px;
         font-size: 15px;
+    }
+
+    .home__wrapper {
+        padding: 40px 15px;
+    }
+
+    .section__title {
+        font-size: 28px;
+    }
+
+    .gallery {
+        margin-top: 32px;
+    }
+
+    .gallery::after {
+    width: 28px;
+    height: 28px;
+    background-image: url(./images/svg_sprite.svg);
+    background-position: -337px -9px;
+    top: 32%;
+    right: -2%;
+}
+
+    .gallery__item h3 {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+    .gallery__item p {
+        font-size: 12px;
+        margin-top: 4px;
     }
 
     .footer__wrapper {
