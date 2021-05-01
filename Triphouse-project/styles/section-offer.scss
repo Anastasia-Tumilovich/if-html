@@ -1,0 +1,144 @@
+.offer {
+  &__wrapper {
+    padding: 120px 104px;
+    @media (max-width: 1200px) {
+      padding: 6vw;
+    }
+    @media (max-width: 360px) {
+      padding: 24px 73px 40px;
+    }
+    .section__title {
+      font-family: "Roboto Medium";
+      font-size: 40px;
+      text-align: center;
+      @media (max-width: 800px) {
+        font-size: 35px;
+      }
+    }
+    .offer__title {
+      position: relative;
+      @media (max-width: 360px) {
+        font-size: 28px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10%;
+        height: 4px;
+        background-color: #F5BD41;
+        bottom: -20px;
+        left: 45%;
+        @media (max-width: 800px) {
+          content: none;
+        }
+      }
+    }
+    .items {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+      @media (max-width: 800px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 360px) {
+        align-items: center;
+        flex-flow: column;
+        margin-top: 32px;
+      }
+      .item {
+        .support__icon {
+          background: url(../images/svg_sprite.svg);
+          background-position: -6px -112px;
+          width: 76px;
+          height: 92px;
+          margin: 0 auto;
+          @media (max-width: 360px) {
+            background: url(../images/svg_sprite.svg);
+            background-position: 0 -35px;
+            width: 54px;
+            height: 66px;
+          }
+        }
+        .communicate__icon {
+          background: url(../images/svg_sprite.svg);
+          background-position: -90px -112px;
+          width: 84px;
+          height: 92px;
+          margin: 0 auto;
+          @media (max-width: 360px) {
+            background: url(../images/svg_sprite.svg);
+            background-position: -60px -38px;
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .book__icon {
+          background: url(../images/svg_sprite.svg);
+          background-position: -185px -112px;
+          width: 100px;
+          height: 92px;
+          margin: 0 auto;
+          @media (max-width: 360px) {
+            background: url(../images/svg_sprite.svg);
+            background-position: -126px -44px;
+            width: 70px;
+            height: 48px;
+          }
+        }
+        .review__icon {
+          background: url(../images/svg_sprite.svg);
+          background-position: -311px -113px;
+          width: 92px;
+          height: 92px;
+          margin: 0 auto;
+          @media (max-width: 360px) {
+            background: url(../images/svg_sprite.svg);
+            background-position: -202px -30px;
+            width: 66px;
+            height: 60px;
+          }
+        }
+        p {
+          font-family: "Roboto Regular";
+          text-align: center;
+          font-size: 24px;
+          margin-top: 48px;
+          @media (max-width: 1200px) {
+            font-size: 21px;
+          }
+          @media (max-width: 800px) {
+            margin-top: 15px;
+            font-size: 20px;
+          }
+          @media (max-width: 360px) {
+            margin: 16px 0 32px;
+            font-size: 15px;
+          }
+        }
+      }
+      .item1 {
+        @media (max-width: 800px) {
+          width: 50%;
+        }
+      }
+      .item2 {
+        @media (max-width: 800px) {
+          width: 50%;
+        }
+      }
+      .item3 {
+        @media (max-width: 800px) {
+          width: 50%;
+          margin-top: 30px;
+        }
+      }
+      .item4 {
+        @media (max-width: 800px) {
+          width: 50%;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}

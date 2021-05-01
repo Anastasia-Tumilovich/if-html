@@ -1,0 +1,99 @@
+.home {
+  background: #EAF0F9;
+  &__wrapper {
+    padding: 120px 101px;
+    @media (max-width: 1200px) {
+      padding: 6vw;
+    }
+    @media (max-width: 360px) {
+      padding: 40px 15px;
+    }
+    .section__title {
+      font-family: "Roboto Medium";
+      font-size: 40px;
+      text-align: center;
+      @media (max-width: 360px) {
+        font-size: 28px;
+      }
+    }
+    .gallery {
+      margin-top: 104px;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      @media (max-width: 360px) {
+        margin-top: 32px;
+      }
+      &::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/svg_sprite.svg);
+        background-position: -308px -2px;
+        background-color: #f3f3f4;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 0 5px 5px grey;
+        top: 32%;
+        right: -2%;
+        cursor: pointer;
+        transition: .5s linear;
+        @media (max-width: 360px) {
+          width: 28px;
+          height: 28px;
+          background-image: url(../images/svg_sprite.svg);
+          background-position: -337px -9px;
+          top: 32%;
+          right: -2%;
+        }
+      }
+      &:hover::after {
+        transform: scale(1.2);
+      }
+      &__item {
+        img {
+          width: 100%;
+        }
+        h3 {
+          font-family: "Roboto Regular";
+          font-size: 24px;
+          margin-top: 24px;
+          @media (max-width: 1200px) {
+            font-size: 21px;
+          }
+          @media (max-width: 360px) {
+            font-size: 12px;
+            margin-top: 8px;
+          }
+          a {
+            text-decoration: none;
+            color: #3077c6;
+          }
+        }
+        p {
+          font-family: "Roboto Regular";
+          font-size: 24px;
+          letter-spacing: -1px;
+          color: #bfbfbf;
+          margin-top: 24px;
+           @media (max-width: 1200px) {
+            font-size: 21px;
+          }
+          @media (max-width: 360px) {
+            font-size: 12px;
+            margin-top: 4px;
+          }
+        }
+      }
+      &__item:not(:first-child) {
+        margin-left: 10px;
+      }
+      &__item:nth-child(n+3) {
+        @media (max-width: 800px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
