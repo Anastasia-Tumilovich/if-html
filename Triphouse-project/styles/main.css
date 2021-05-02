@@ -984,6 +984,7 @@ body {
 }
 .destination__wrapper .places__item div img {
   width: 100%;
+  display: block;
 }
 .destination__wrapper .places__item h3 {
   margin-top: 24px;
