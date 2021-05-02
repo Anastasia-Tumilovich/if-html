@@ -1,0 +1,243 @@
+.reviews {
+  @media (max-width: 360px) {
+    background: #eaf0f9;
+  }
+  &__wrapper {
+    padding: 120px 104px;
+    @media (max-width: 1200px) {
+      padding: 6vw;
+    }
+    @media (max-width: 360px) {
+      padding: 40px 15px;
+    }
+    .section__title {
+      font-family: "Roboto Medium";
+      font-size: 40px;
+      text-align: center;
+      @media (max-width: 360px) {
+        display: none;
+      }
+    }
+    .mobile__title {
+      display: none;
+      font-family: "Roboto Medium";
+      font-size: 28px;
+      text-align: center;
+      @media (max-width: 360px) {
+        display: block;
+      }
+    }
+    .reviews__list {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 104px;
+      @media (max-width: 360px) {
+        margin-top: 32px;
+      }
+      &::after {
+        content: "";
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/svg_sprite.svg);
+        background-position: -308px -2px;
+        background-color: #f3f3f4;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 0 5px 5px grey;
+        top: 22%;
+        right: -2%;
+        cursor: pointer;
+        transition: 0.5s linear;
+        @media (max-width: 800px) {
+          content: none;
+        }
+      }
+      &:hover::after {
+        transform: scale(1.2);
+      }
+      .review {
+        list-style-type: none;
+        max-width: 400px;
+        width: 33%;
+        background: #eaf0f9;
+        @media (max-width: 800px) {
+          &:nth-child(n+3) {
+            display: none;
+          }
+          & {
+            width: 46%;
+          }
+        }
+        @media (max-width: 360px) {
+          &:nth-child(n+2) {
+            display: none;
+          }
+          & {
+            width: 100%;
+          }
+        }
+        &__photo {
+          position: relative;
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+        &__photo::after {
+          content: "";
+          font-family: "Roboto Regular";
+          font-size: 18px;
+          color: #ffffff;
+          background: rgba(56, 56, 56, 0.7);
+          padding: 16px 24px 11px;
+          position: absolute;
+          bottom: 0;
+          left: 0; 
+          right: 0;
+        }
+        .photo1::after {
+          content: "From 250 USD";
+        }
+        .photo2::after {
+          content: "From 40 USD";
+        }
+        .photo3::after {
+          content: "From 100 USD";
+        }       
+        &__wrapper {
+          padding: 24px;
+          @media (max-width: 1200px) {
+            padding: 5px;
+          }
+          .review__description {
+          display: flex;
+          justify-content: space-between;
+          .review__text {
+            h3 {
+              font-family: "Roboto Medium";
+              font-size: 18px;
+              color: #3077c6;
+              @media (max-width: 1200px) {
+                font-size: 16px;
+              }
+              @media (max-width: 360px) {
+                font-size: 15px;
+              }
+            }
+            p {
+              font-family: "Roboto Regular";
+              font-size: 18px;
+              color: #3077c6;
+              margin-top: 16px;
+              @media (max-width: 1200px) {
+                font-size: 15px;
+                margin-top: 8px;
+              }
+            }
+          }
+          .review__rating {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            div {
+              align-self: flex-end;
+              background: #10367c;
+              border-radius: 8px;
+              padding: 4px 11px;
+              color: #ffffff;
+              font-family: "Roboto Medium";
+              font-size: 18px;
+              @media (max-width: 360px) {
+                padding: 3px 9px;
+                font-size: 15px;
+              }
+            }
+            p {
+              font-family: "Roboto Regular";
+              font-size: 14px;
+              color: #bfbfbf;
+              @media (max-width: 1200px) {
+                font-size: 10px;
+              }
+              @media (max-width: 360px) {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+          .reviewer {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            @media (max-width: 360px) {
+              margin-top: 20px;
+            }
+            &__icon {
+              background: url(../images/svg_sprite.svg);
+              background-position: -450px -4px;
+              width: 54px;
+              height: 54px;
+            }
+            &__info {
+              margin-left: 21px;
+              h4 {
+                font-family: "Roboto Regular";
+                font-size: 18px;
+                @media (max-width: 360px) {
+                  font-size: 15px;
+                }
+              }
+              p {
+                font-family: "Roboto Regular";
+                font-size: 18px;
+                color: #bfbfbf;
+                margin-top: 8px;
+                @media (max-width: 360px) {
+                  font-size: 15px;
+                  margin-top: 4px;
+                }
+              }
+            }
+            &__text {
+              font-family: "Roboto Regular";
+              font-size: 18px;
+              margin-top: 22px;
+              @media (max-width: 1200px) {
+                font-size: 14px;
+              }
+              @media (max-width: 360px) {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .carousel {
+      display: none;
+      @media (max-width: 360px) {
+        display: block;
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+      }
+      &__active {
+        background: black;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+      div {
+        width: 8px;
+        height: 8px;
+        border: solid 1px black;
+        border-radius: 50%;
+      }
+      div:not(:first-child) {
+        margin-left: 8px;
+      }
+    }
+  }
+}

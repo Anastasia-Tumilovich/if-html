@@ -1,0 +1,97 @@
+.footer {
+  background: #10367C;
+  &__wrapper {
+    padding: 120px 104px;
+    @media (max-width: 1200px) {
+      padding: 6vw;
+    }
+    @media (max-width: 360px) {
+      padding: 40px 68px 40px 67px;
+    }
+    .logo {
+      display: none;
+      @media (max-width: 360px) {
+        display: block;
+        text-align: center;
+      }
+    }
+    .footer-logo-white {
+      display: none;
+      text-align: center;
+      @media (max-width: 1200px) {
+        display: block;
+      }
+      @media (max-width: 360px) {
+        display: none;
+      }
+    }
+    .footer__navigation {
+      @media (max-width: 1200px) {
+        margin-top: 70px;
+      }
+      @media (max-width: 360px) {
+        margin-top: 40px;
+      }
+      .navigation {
+        li {
+          list-style-type: none;
+        }
+        a {
+          text-decoration: none;
+          color: #ffffff;
+        }
+        &__list {
+          display: flex;
+          justify-content: space-between;
+          .navigation__item {
+            &>a {
+              font-family: "Roboto Medium";
+              font-size: 20px;
+               @media (max-width: 360px) {
+                  font-size: 15px;
+                  text-decoration: underline;
+                }
+            }
+            ul {
+              margin-top: 24px;
+              @media (max-width: 1200px) {
+                display: none;
+              }
+              @media (max-width: 360px) {
+                display: none;
+              }
+              li:not(:last-child) {
+                margin-bottom: 24px;
+              }
+              a {
+                font-family: "Roboto Regular";
+                font-size: 20px;
+                @media (max-width: 1200px) {
+                  font-size: 30px;
+                  text-decoration: underline;
+                }
+                @media (max-width: 800px) {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      p {
+        color: #ffffff;
+        margin-top: 64px;
+        font-family: "Roboto Regular";
+        font-size: 14px;
+        @media (max-width: 1200px) {
+          font-size: 25px;
+          margin-top: 32px;
+          text-align: center;
+        }
+        @media (max-width: 360px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
