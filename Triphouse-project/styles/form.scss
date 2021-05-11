@@ -1,3 +1,6 @@
+@import './variables.scss';
+@import './mixins.scss';
+
 .main__form {
   margin-top: 100px;
   @media (max-width: 800px) {
@@ -13,9 +16,8 @@
       display: none;
     }
     .labels {
-      font-family: "Roboto Regular";
-      font-size: 18px;
-      color: #ffffff;
+      @include font ("Roboto Regular", 18px);
+      color: $white;
       padding-left: 24px;
       padding-right: 73px;
       width: 60%;
@@ -36,7 +38,7 @@
     .inputs {
       display: flex;
       justify-content: space-between;
-      background-color: #ffffff;
+      background-color: $white;
       border-radius: 8px;
       margin-top: 24px;
       @media (max-width: 1200px) {
@@ -52,12 +54,11 @@
         padding: 22px 24px 21px; 
         border: none;
         border-radius: 8px;
-        outline-color: #F5BD41;
+        outline-color: $orange;
         outline-offset: -2px;
-        font-family: "Roboto Regular";
-        font-size: 18px;
+        @include font ("Roboto Regular", 18px);
         @media (max-width: 1200px) {
-          border: #F5BD41 solid 4px;
+          border: $orange solid 4px;
           border-radius: 8px;
           width: 100%;
           margin-bottom: 8px;
@@ -82,8 +83,7 @@
         }
       }
       ::placeholder {
-        font-family: "Roboto Regular";
-        font-size: 18px;
+        @include font ("Roboto Regular", 18px);
         color: #383838;
         @media (max-width: 1200px) {
           text-align: center;
@@ -97,10 +97,9 @@
         padding: 20px 57px;
         border: none;
         border-radius: 8px;
-        background: #3077C6;
-        color: #ffffff;
-        font-family: "Roboto Medium";
-        font-size: 24px;
+        background: $blue;
+        color: $white;
+        @include font ("Roboto Medium", 24px);
         cursor: pointer;
       }
     }
@@ -112,22 +111,20 @@
     display: block;
     margin-top: 31px;
     padding: 8px;
-    background: #F5BD41;
+    background: $orange;
   }
   .form__content {
     padding: 8px;
-    background: #F5BD41;
+    background: $orange;
     input {
       width: 100%;
       border: none;
       border-radius: 4px;
-      font-family: "Roboto Medium";
-      font-size: 15px
+      @include font ("Roboto Medium", 15px);
     }
     ::placeholder {
-      font-family: "Roboto Medium";
-        font-size: 15px;
-        color: #383838;
+      @include font ("Roboto Medium", 15px);
+      color: #383838;
     }
     .hotel-name {
       display: flex;
@@ -151,12 +148,11 @@
       display: flex;
       margin-top: 8px;
       .input__date {
-        background: #ffffff;
+        background: $white;
         border-radius: 4px;
         padding: 6px 8px;
         label {
-          font-family: "Roboto Regular";
-          font-size: 12px;
+          @include font ("Roboto Regular", 12px);
         }
       }
       .input__date:first-child {
@@ -166,20 +162,19 @@
     .input__persons {
       display: flex;
       margin-top: 8px;
-      background: #ffffff;
+      background: $white;
       border-radius: 4px;
       .input__person {
         padding: 6px 8px 3px;
         line-height: 19px;
         position: relative;
         label {
-          font-family: "Roboto Regular";
-          font-size: 12px;
+          @include font ("Roboto Regular", 12px);
         }
       }
       .input__person:nth-child(2)::after {
         content: "";
-        background: #BFBFBF;
+        background: $grey;
         width: 1px;
         height: 32px;
         position: absolute;
@@ -188,7 +183,7 @@
       }
       .input__person:first-child::after {
         content: "";
-        background: #BFBFBF;
+        background: $grey;
         width: 1px;
         height: 32px;
         position: absolute;
@@ -201,10 +196,9 @@
       width: 100%;
       border: none;
       border-radius: 4px;
-      background: #3077C6;
-      color: #ffffff;
-      font-family: "Roboto Medium";
-      font-size: 19px;
+      background: $blue;
+      color: $white;
+      @include font ("Roboto Medium", 19px);
       padding: 14px 125px;
       line-height: 20px;
     }

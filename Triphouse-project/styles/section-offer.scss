@@ -1,3 +1,6 @@
+@import './variables.scss';
+@import './mixins.scss';
+
 .offer {
   &__wrapper {
     padding: 120px 104px;
@@ -8,8 +11,7 @@
       padding: 24px 73px 40px;
     }
     .section__title {
-      font-family: "Roboto Medium";
-      font-size: 40px;
+      @include font ("Roboto Medium", 40px);
       text-align: center;
       @media (max-width: 800px) {
         font-size: 35px;
@@ -25,7 +27,7 @@
         position: absolute;
         width: 10%;
         height: 4px;
-        background-color: #F5BD41;
+        background-color: $orange;
         bottom: -20px;
         left: 45%;
         @media (max-width: 800px) {
@@ -100,9 +102,8 @@
           }
         }
         p {
-          font-family: "Roboto Regular";
+          @include font ("Roboto Regular", 24px);
           text-align: center;
-          font-size: 24px;
           margin-top: 48px;
           @media (max-width: 1200px) {
             font-size: 21px;

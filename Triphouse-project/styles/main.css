@@ -117,7 +117,7 @@ body {
   content: "";
   width: 100%;
   height: 3px;
-  background-color: #F5BD41;
+  background-color: #f5bd41;
   position: absolute;
   bottom: -12px;
   left: 0;
@@ -315,14 +315,14 @@ body {
   padding: 22px 24px 21px;
   border: none;
   border-radius: 8px;
-  outline-color: #F5BD41;
+  outline-color: #f5bd41;
   outline-offset: -2px;
   font-family: "Roboto Regular";
   font-size: 18px;
 }
 @media (max-width: 1200px) {
   .main__form .form__content .inputs input {
-    border: #F5BD41 solid 4px;
+    border: #f5bd41 solid 4px;
     border-radius: 8px;
     width: 100%;
     margin-bottom: 8px;
@@ -372,7 +372,7 @@ body {
   padding: 20px 57px;
   border: none;
   border-radius: 8px;
-  background: #3077C6;
+  background: #3077c6;
   color: #ffffff;
   font-family: "Roboto Medium";
   font-size: 24px;
@@ -387,12 +387,12 @@ body {
     display: block;
     margin-top: 31px;
     padding: 8px;
-    background: #F5BD41;
+    background: #f5bd41;
   }
 }
 .mobile__form .form__content {
   padding: 8px;
-  background: #F5BD41;
+  background: #f5bd41;
 }
 .mobile__form .form__content input {
   width: 100%;
@@ -457,7 +457,7 @@ body {
 }
 .mobile__form .form__content .input__persons .input__person:nth-child(2)::after {
   content: "";
-  background: #BFBFBF;
+  background: #bfbfbf;
   width: 1px;
   height: 32px;
   position: absolute;
@@ -466,7 +466,7 @@ body {
 }
 .mobile__form .form__content .input__persons .input__person:first-child::after {
   content: "";
-  background: #BFBFBF;
+  background: #bfbfbf;
   width: 1px;
   height: 32px;
   position: absolute;
@@ -478,7 +478,7 @@ body {
   width: 100%;
   border: none;
   border-radius: 4px;
-  background: #3077C6;
+  background: #3077c6;
   color: #ffffff;
   font-family: "Roboto Medium";
   font-size: 19px;
@@ -522,7 +522,7 @@ body {
   position: absolute;
   width: 10%;
   height: 4px;
-  background-color: #F5BD41;
+  background-color: #f5bd41;
   bottom: -20px;
   left: 45%;
 }
@@ -611,8 +611,8 @@ body {
 }
 .offer__wrapper .items .item p {
   font-family: "Roboto Regular";
-  text-align: center;
   font-size: 24px;
+  text-align: center;
   margin-top: 48px;
 }
 @media (max-width: 1200px) {
@@ -656,7 +656,7 @@ body {
 }
 
 .home {
-  background: #EAF0F9;
+  background: #eaf0f9;
 }
 .home__wrapper {
   padding: 120px 101px;
@@ -1078,7 +1078,7 @@ body {
 }
 .destination__wrapper .destination__sign .sign-up button {
   padding: 12px 32px;
-  font-family: "Roboto Rehular";
+  font-family: "Roboto Regular";
   font-size: 18px;
   color: #3077c6;
   border: solid 1px;
@@ -1391,7 +1391,7 @@ body {
   }
 }
 .reviews__wrapper .carousel__active {
-  background: black;
+  background: #000000;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -1399,7 +1399,7 @@ body {
 .reviews__wrapper .carousel div {
   width: 8px;
   height: 8px;
-  border: solid 1px black;
+  border: solid 1px #000000;
   border-radius: 50%;
 }
 .reviews__wrapper .carousel div:not(:first-child) {
@@ -1407,7 +1407,7 @@ body {
 }
 
 .footer {
-  background: #10367C;
+  background: #10367c;
 }
 .footer__wrapper {
   padding: 120px 104px;

@@ -1,5 +1,8 @@
+@import './variables.scss';
+@import './mixins.scss';
+
 .home {
-  background: #EAF0F9;
+  background: $light-blue;
   &__wrapper {
     padding: 120px 101px;
     @media (max-width: 1200px) {
@@ -9,8 +12,7 @@
       padding: 40px 15px;
     }
     .section__title {
-      font-family: "Roboto Medium";
-      font-size: 40px;
+      @include font ("Roboto Medium", 40px);
       text-align: center;
       @media (max-width: 360px) {
         font-size: 28px;
@@ -31,7 +33,7 @@
         height: 40px;
         background-image: url(../images/svg_sprite.svg);
         background-position: -308px -2px;
-        background-color: #f3f3f4;
+        background-color: $light-grey;
         border-radius: 50%;
         position: absolute;
         box-shadow: 0 5px 5px grey;
@@ -56,8 +58,7 @@
           width: 100%;
         }
         h3 {
-          font-family: "Roboto Regular";
-          font-size: 24px;
+          @include font ("Roboto Regular", 24px);
           margin-top: 24px;
           @media (max-width: 1200px) {
             font-size: 21px;
@@ -68,14 +69,13 @@
           }
           a {
             text-decoration: none;
-            color: #3077c6;
+            color: $blue;
           }
         }
         p {
-          font-family: "Roboto Regular";
-          font-size: 24px;
+          @include font ("Roboto Regular", 24px);
           letter-spacing: -1px;
-          color: #bfbfbf;
+          color: $grey;
           margin-top: 24px;
            @media (max-width: 1200px) {
             font-size: 21px;

@@ -1,3 +1,6 @@
+@import './variables.scss';
+@import './mixins.scss';
+
 .destination {
   &__wrapper {
     padding: 120px 101px 0;
@@ -11,15 +14,14 @@
       padding: 40px 15px;
     }
     .section__title {
-      font-family: "Roboto Medium";
-      font-size: 40px;
+      @include font ("Roboto Medium", 40px);
       text-align: center;
       @media (max-width: 360px) {
         font-size: 28px;
       }
     }
     .destination__buttons {
-      background: #f3f3f4;
+      background: $light-grey;
       border-radius: 8px;
       margin-top: 104px;
       display: flex;
@@ -37,10 +39,9 @@
         justify-content: space-between;
       }
       button {
-        background: #f3f3f4;
+        background: $light-grey;
         padding: 17px 25px;
-        font-family: "Roboto Regular";
-        font-size: 24px;
+        @include font ("Roboto Regular", 24px);
         border-radius: 8px;
         border: none;
         cursor: pointer;
@@ -54,8 +55,8 @@
           padding: 5px 15px;
         }
         &:hover {
-          background: #3077c6;
-          color: #ffffff;
+          background: $blue;
+          color: $white;
         }
       }
       button:not(:first-child) {
@@ -69,8 +70,8 @@
         }
       }
       .active__tab {
-        background: #3077c6;
-        color: #ffffff;
+        background: $blue;
+        color: $white;
       }
       .destination__mobile_button {
         display: none;
@@ -95,7 +96,7 @@
           height: 40px;
           background-image: url(../images/svg_sprite.svg);
           background-position: -308px -2px;
-          background-color: #f3f3f4;
+          background-color: $light-grey;
           border-radius: 50%;
           position: absolute;
           box-shadow: 0 5px 5px grey;
@@ -161,11 +162,10 @@
           }
           .book {
             padding: 13px 24px;
-            font-family: "Roboto Regular";
-            font-size: 18px;
-            color: #3077c6;
+            @include font ("Roboto Regular", 18px);
+            color: $blue;
             border-radius: 8px;
-            border: solid 1px #3077c6;
+            border: solid 1px $blue;
             position: absolute;
             top: 40%;
             left: 26%;
@@ -189,10 +189,9 @@
             margin-top: 8px;
           }
           a {
-            font-family: "Roboto Regular";
-            font-size: 24px;
+            @include font ("Roboto Regular", 24px);
             text-decoration: none;
-            color: #3077c6;
+            color: $blue;
             @media (max-width: 1200px) {
               font-size: 21px;
             }
@@ -207,7 +206,7 @@
       margin: 48px auto;
       background: url(../images/svg_sprite.svg);
       background-position: -361px 13px;
-      background-color: #f3f3f4;
+      background-color: $light-grey;
       border-radius: 50%;
       width: 40px;
       height: 40px;
@@ -223,7 +222,7 @@
     }
     .destination__sign {
       margin-top: 120px;
-      background: #eaf0f9;
+      background: $light-blue;
       padding: 52px 24px;
       display: flex;
       position: relative;
@@ -252,7 +251,7 @@
         width: 86px;
         height: 86px;
         border-radius: 50%;
-        background-color: #ffffff;
+        background-color: $white;
         margin-right: 24px;
       }
       .sign-up {
@@ -260,14 +259,12 @@
         flex-direction: column;
         justify-content: space-between;
         p {
-          font-family: "Roboto Medium";
-          font-size: 24px;
+          @include font ("Roboto Medium", 24px);
         }
         button {
           padding: 12px 32px;
-          font-family: "Roboto Rehular";
-          font-size: 18px;
-          color: #3077c6;
+          @include font ("Roboto Regular", 18px);
+          color: $blue;
           border: solid 1px;
           border-radius: 8px;
           align-self: start;
@@ -296,20 +293,18 @@
     .destination__logo {
       background: url(../images/svg_sprite.svg);
       background-position: -363px -54px;
-      background-color: #3077c6;
+      background-color: $blue;
       border-radius: 4px;
       width: 58px;
       height: 58px;
     }
     p {
-      font-family: "Roboto Regular";
-      font-size: 12px;
+      @include font ("Roboto Regular", 12px);
     }
     a {
       text-decoration: none;
-      color: #3077c6;
-      font-family: "Roboto Medium";
-      font-size: 14px;
+      color: $blue;
+      @include font ("Roboto Medium", 14px);
     }
   }
 }
