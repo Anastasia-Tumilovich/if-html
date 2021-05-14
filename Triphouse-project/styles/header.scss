@@ -2,6 +2,7 @@
 @import './mixins.scss';
 
 .header {
+  // height: 100vw;
   background-image: url(../images/header-background.png);
   background-size: cover;
   &__wrapper {
